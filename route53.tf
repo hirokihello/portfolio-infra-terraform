@@ -14,8 +14,3 @@ resource "aws_route53_record" "hirokihello_portfolio_routing" {
   }
 }
 
-resource "aws_acm_certificate" "cert" {
-  domain_name       = "hirokihello.xyz"
-  validation_method = "DNS"
-  provider          = "aws.virginia"
-}
