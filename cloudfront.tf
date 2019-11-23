@@ -2,9 +2,9 @@
 #   s3_origin_id = "hirokihello-portfolio"
 # }
 
-# resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
-#   comment = "origin_access_identity"
-# }
+resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
+  comment = "origin_access_identity"
+}
 
 # resource "aws_cloudfront_distribution" "s3_distribution" {
 
