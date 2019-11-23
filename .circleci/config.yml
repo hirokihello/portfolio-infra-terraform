@@ -21,9 +21,6 @@ jobs:
           command: |
             /opt/terraform/terraform init
             /opt/terraform/terraform plan
-            if [ "${CIRCLE_BRANCH}" == "terraform-staging" ]; then
-              /opt/terraform/terraform apply -auto-approve
-            fi
-            if [ "${CIRCLE_BRANCH}" == "terraform-production" ]; then
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
               /opt/terraform/terraform apply -auto-approve
             fi
