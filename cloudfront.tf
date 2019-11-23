@@ -25,7 +25,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 
   logging_config {
     include_cookies = false
-    bucket          = "alb-log-atams-front-${var.stage}.s3.amazonaws.com"
+    bucket          = "alb-log-hirokihello-portfolio.s3.amazonaws.com"
     prefix          = "production-log"
   }
 

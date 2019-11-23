@@ -49,7 +49,7 @@ resource "aws_s3_bucket_policy" "hirokihello_portfolio" {
 
 # log bucket
 resource "aws_s3_bucket" "alb_log_hirokihello_portfolio" {
-  bucket = "alb-log-atams-hirokihello-portfolio"
+  bucket = "alb-log-hirokihello-portfolio"
 
   lifecycle_rule {
     enabled = true
